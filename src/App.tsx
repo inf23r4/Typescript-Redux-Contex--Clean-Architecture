@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { Home } from './Pages'
+import { LayoutContainer } from './styled-components'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div className="App">
       <Navbar/>
-      <Home></Home>
+      <LayoutContainer><Home/></LayoutContainer>
     </div>
   )
 }
